@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(19, 19, 19);
+    color: aliceblue;
+    font-family: Montserrat;
+}
+
+.name h1{
+    font-family: Montserrat, Helvetica;
+    font-size: 5rem;
+    letter-spacing: 3rem;
+    animation: glow 3s 1s infinite;
+}
+
+p{
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-family: Montserrat, Helvetica;
+    color: rgb(204, 204, 204);
+    animation: fadein 3s ease-in;
+}
+a{
+    text-decoration: none;
+    color: rgb(204, 204, 204);
+}
+
+a:visited{
+    text-decoration: none;
+    color: rgb(204, 204, 204);
+}
+
+.content{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(111, 255, 0);
+}
+
+.name{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    animation: fadein 1s ease-in;
+}
+
+@keyframes glow{
+    50%{text-shadow: 0px 0px 30px rgb(162, 255, 125);}
+}
+
+@keyframes fadein {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.head h1{
+    font-family: Montserrat, Helvetica;
+    color: rgb(111, 255, 0);
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    animation: glow 2s ease-in infinite;
+}
+
+.head{
+    /* position: relative; */
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a;
+}
+
+main{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.slogan{
+    color: white;
+    font-size: 0.8rem;
+    font-family: Montserrat, Helvetica, sans-serif;
+    margin-bottom: 3rem;
+}
+/* 
+.upload-sec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.imgup{
+    height: 350px;
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(66, 66, 66);
+    border-radius: 30px;
+    align-items: center;
+}
+.upload-sec h2{
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.imgup i{
+    font-size: 15rem;
+} */
+
+.fileup{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+input{
+    display: none;
+}
+
+label{
+    display: flex;
+    flex-wrap: wrap;
+    height: 10rem;
+    width: 20rem;
+    margin: 3rem;
+    border-radius: 10px;
+    border: 1px dashed #656565;
+    justify-content: center;
+    align-items: center;
+}
+
+label:hover{
+    color: rgb(111, 255, 0);
+    border: 2px solid rgb(111, 255, 0);
+    cursor: pointer;
+    transition-duration: 0.5s;    
+}
