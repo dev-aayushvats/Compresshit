@@ -114,7 +114,7 @@ function App() {
   return (
     <div className="container">
       <div className="header">
-        <h1 className="title">PiedPiper</h1>
+        <h1 className="title">Compresshit</h1>
         <p className="tagline">Compress smarter, not harder</p>
       </div>
       <div className="upload-section">
